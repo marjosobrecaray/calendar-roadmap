@@ -1,0 +1,13 @@
+
+.year .calendar {
+  margin: auto;
+  grid-template-columns: repeat(15, 1fr);
+  display: grid;
+  gap: 10px;
+  padding-top: 280px
+}
+
+.day-cell {
+  width: 10px;
+  height: 10px;
+}

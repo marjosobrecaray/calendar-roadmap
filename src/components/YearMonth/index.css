@@ -1,0 +1,33 @@
+.year-month .calendar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    padding-top: 250px
+}
+.year-month .month-block {
+    font-size: 12px;
+    text-align: center;
+    color: #999;
+    font-weight: normal;
+}
+
+.year-month .month-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.year-month .empty-day {
+    background-color: transparent;
+}
+
+.year-month .day-cell {
+    width: 6px;
+    height: 6px;
+}
+
+.year-month  p {
+  font-size: 12px;
+}
