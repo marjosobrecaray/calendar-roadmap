@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import './index.css'
 import { useEffect, useState } from 'react';
 
-function YearMonthView() {
+function YearMonthView({ mode }) {
   const [currentDate, setCurrentDate] = useState(null);
   const [months, setMonths] = useState([]);
   const [daysInYear, setDaysInYear] = useState([]);
@@ -54,7 +54,7 @@ function YearMonthView() {
 
   return (
     <>
-      <div className="calendar">
+      <div className={`calendar ${mode}`}>
         {months.map(({month, days}) => (
           <div key={month} className="month-block">
             <p>{dayjs().month(month).format('MMMM')}</p>

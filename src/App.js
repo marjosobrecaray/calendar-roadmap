@@ -5,17 +5,24 @@ import YearMonth from './components/YearMonth';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [view, setView] = useState(null);
+  const [view, setView] = useState('year');
+  const [mode, setMode] = useState('light');
+
   useEffect(() => {
+    // to objectify view and mode from url params
     if (window && window.location.search) {
-      setView(decodeURIComponent(window.location.search.replace('?view=', ''))); 
+      const searchParams = new URLSearchParams(window.location.search);
+      const paramsObject = Object.fromEntries(searchParams.entries());
+      
+      setView(paramsObject.view || 'year'); 
+      setMode(paramsObject.mode || 'light');
     }
   }, []);
   return (
-    <div className="App">
+    <div className={`app ${mode}`} id="app">
       <div className="year">
         { view === 'year' &&
-        <YearView/> }
+        <YearView mode={mode} /> }
       </div>
       <div className="year-month">
         {view === 'year-month' &&

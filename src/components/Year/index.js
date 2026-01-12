@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import './index.css'
 import { useEffect, useState } from 'react';
 
-function YearView() {
+function YearView({ mode }) {
   const [currentDate, setCurrentDate] = useState(null);
   const [daysInYear, setDaysInYear] = useState([]);
 
@@ -22,7 +22,7 @@ function YearView() {
 
   return (
     <>
-      <div className="calendar">
+      <div className={`calendar ${mode}`}>
         {daysInYear.map((date) => (
           <div
             key={date}
