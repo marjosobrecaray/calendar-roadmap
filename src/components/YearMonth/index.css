@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
-    padding-top: 250px
+    padding-top: 280px
 }
 .year-month .month-block {
     font-size: 12px;

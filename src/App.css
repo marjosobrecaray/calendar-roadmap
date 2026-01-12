@@ -9,11 +9,11 @@
   font-size: 14px;
   font-family: "Funnel Sans", monospace;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .app.light {
-  background-color: #f5f5f5;
+  background-color: #dddddd;
   color: #000;
 }
 
@@ -36,13 +36,17 @@
   background-color: orange !important;
 }
 
+.light .current-day {
+  background-color: #1c00c9 !important;
+}
+
 .day-cell {
   background-color: #383838;
   border-radius: 100%;
 }
 
 .light .day-cell {
-  background-color: #d3d3d3;
+  background-color: #bebebf;
 }
 
 p {
@@ -51,4 +55,8 @@ p {
 
 span {
   color: orange
+}
+
+.light span {
+  color: #1c00c9
 }
