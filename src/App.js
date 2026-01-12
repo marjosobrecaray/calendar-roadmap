@@ -2,6 +2,7 @@ import './App.css';
 
 import YearView from './components/Year';
 import YearMonth from './components/YearMonth';
+import GoalView from './components/Goal';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -24,6 +25,11 @@ function App() {
         { view === 'year' &&
         <YearView mode={mode} /> }
       </div>
+      { view === 'goal' &&
+        <div className="goal">
+          <GoalView mode={mode} />
+        </div>
+      }
       <div className="year-month">
         {view === 'year-month' &&
         <YearMonth/> }
