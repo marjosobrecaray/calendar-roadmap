@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/calendar-roadmap/static/css/main.771ea9ee.css",
+    "main.js": "/calendar-roadmap/static/js/main.c2276b45.js",
+    "static/js/453.8b5d2685.chunk.js": "/calendar-roadmap/static/js/453.8b5d2685.chunk.js",
+    "index.html": "/calendar-roadmap/index.html",
+    "main.771ea9ee.css.map": "/calendar-roadmap/static/css/main.771ea9ee.css.map",
+    "main.c2276b45.js.map": "/calendar-roadmap/static/js/main.c2276b45.js.map",
+    "453.8b5d2685.chunk.js.map": "/calendar-roadmap/static/js/453.8b5d2685.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.771ea9ee.css",
+    "static/js/main.c2276b45.js"
+  ]
+}
