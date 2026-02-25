@@ -3,11 +3,39 @@
   margin: auto;
   grid-template-columns: repeat(15, 1fr);
   display: grid;
-  gap: 8px;
-  padding-top: 300px
+  gap: 14px;
+  padding-top: 290px
 }
 
-.day-cell {
-  width: 8px;
-  height: 8px;
+.year .day-cell {
+  width: 6px;
+  height: 6px;
+  position: relative;
+  background-color: transparent;
+}
+
+.year .day-cell::before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #a9a9a9;
+  border-radius: 100%;
+  margin: auto;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.year .day-cell.past-day::before {
+  background-color: transparent !important;
+}
+
+.year p {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+  font-family: 'Gamja Flower';
+}
+
+.year .current-day::before {
+  background-color: transparent !important;
 }
