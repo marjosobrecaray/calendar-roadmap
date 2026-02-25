@@ -1,0 +1,32 @@
+
+.year .calendar {
+  margin: auto;
+  grid-template-columns: repeat(15, 1fr);
+  display: grid;
+  gap: 10px;
+  padding-top: 290px
+}
+
+.year .day-cell {
+  width: 10px;
+  height: 10px;
+}
+
+.year .day-cell {
+  background-image: url('circle.png');
+  background-size: cover;
+}
+
+.year .day-cell.past-day {
+  background-color: transparent !important; 
+  background-image: url('circle-filled.png');
+  background-size: cover;
+}
+
+.year p {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+  font-family: Gamja Flower;
+  font-weight: bold;
+}
