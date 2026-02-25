@@ -15,6 +15,7 @@
 .year .day-cell {
   background-image: url('circle.png');
   background-size: cover;
+  background-color: transparent;
 }
 
 .year .day-cell.past-day {
@@ -27,6 +28,11 @@
   text-align: center;
   font-size: 22px;
   margin-top: 20px;
-  font-family: Gamja Flower;
-  font-weight: bold;
+  font-family: 'Gamja Flower';
+}
+
+.year .current-day {
+  background-color: transparent !important; 
+  background-image: url('active.png');
+  background-size: cover;
 }
